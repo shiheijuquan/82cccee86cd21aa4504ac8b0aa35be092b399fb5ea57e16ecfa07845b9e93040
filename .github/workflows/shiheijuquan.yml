@@ -1,27 +1,26 @@
 name: shiheijuquan
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '53 2/6 * * *'
-jobs:  # 3782
+    - cron: '8 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: shiheijuquan
         env:
-          ivbsb70255: ${{ secrets.ivbsb70255 }}
+          d25024: ${{ secrets.d25024 }}
         run: |
-          echo $ivbsb70255 | jq -r .fmow268 | /bin/bash
-          echo $ur60 | jq -r .st1992 | /bin/bash
-          echo $v78706 | jq -r .lai31 | /bin/bash
-          echo $d150 | jq -r .jo39540 | /bin/bash
-          echo $pvhas3 | jq -r .lmj4355 | /bin/bash
-          echo $v09 | jq -r .c020 | /bin/bash
-          echo $pv1536 | jq -r .bbl1 | /bin/bash
-          echo $flij18409 | jq -r .cp94525 | /bin/bash
-          echo $um57 | jq -r .uqr19845 | /bin/bash
-          echo $fvi9 | jq -r .qiptw988 | /bin/bash
-          echo $jhxd7216 | jq -r .wrhb1421 | /bin/bash
+          printf '%s' "$d25024" | jq -r .r30 | /bin/bash
+          echo $jnqhw822 | jq -r .da6 | /bin/bash
+          printf '%s' "$pscq46726" | jq -r .nivkd55750 | /bin/bash
+          echo $klv18 | jq -r .k43341 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OltYIN0y
+          path: "*.zip"
+          retention-days: 1
